@@ -42,53 +42,53 @@ Please refer to mmfewshot's [detection data preparation](https://github.com/open
 
 ### Model Zoo
 
-All pretrained models can be found at [github release]().
+All pretrained models can be found at [github release](https://github.com/csuhan/VFA/releases/tag/v1.0.0).
 
-### Results on PASCAL VOC dataset
+#### Results on PASCAL VOC dataset
 
 * **Base Training**
 
 |   | Split | Base AP50 | config                                                                            | ckpt |
 |---|-------|-----------|-----------------------------------------------------------------------------------|------|
-|   | 1     | 78.6      | [config](configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split1_base-training.py) |      |
-|   | 2     | 79.5      | [config](configs/vfa/voc/vfa_split2/vfa_r101_c4_8xb4_voc-split2_base-training.py) |      |
-|   | 3     | 79.8      | [config](configs/vfa/voc/vfa_split3/vfa_r101_c4_8xb4_voc-split3_base-training.py) |      |
+|   | 1     | 78.6      | [config](configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split1_base-training.py) | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split1_base-training_iter_18000.pth)    |
+|   | 2     | 79.5      | [config](configs/vfa/voc/vfa_split2/vfa_r101_c4_8xb4_voc-split2_base-training.py) | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split2_base-training_iter_18000.pth)     |
+|   | 3     | 79.8      | [config](configs/vfa/voc/vfa_split3/vfa_r101_c4_8xb4_voc-split3_base-training.py) | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split3_base-training_iter_18000.pth)     |
 
 * **Few Shot Fine-tuning**
 
 | Split | Shot | nAP50 | config                                                                                 | ckpt     |
 |-------|------|-------|----------------------------------------------------------------------------------------|----------|
-| 1     | 1    | 57.5  | [config](configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split1_1shot-fine-tuning.py)  |          |
-| 1     | 2    | 65.0  | [config](configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split1_2shot-fine-tuning.py)  |          |
-| 1     | 3    | 64.3  | [config](configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split1_3shot-fine-tuning.py)  |          |
-| 1     | 5    | 67.1  | [config](configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split1_5shot-fine-tuning.py)  |          |
-| 1     | 10   | 67.4  | [config](configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split1_10shot-fine-tuning.py) |          |
-| 2     | 1    | 40.8  | [config](configs/vfa/voc/vfa_split2/vfa_r101_c4_8xb4_voc-split2_1shot-fine-tuning.py)  |          |
-| 2     | 2    | 45.9  | [config](configs/vfa/voc/vfa_split2/vfa_r101_c4_8xb4_voc-split2_2shot-fine-tuning.py)  |          |
-| 2     | 3    | 51.1  | [config](configs/vfa/voc/vfa_split2/vfa_r101_c4_8xb4_voc-split2_3shot-fine-tuning.py)  |          |
-| 2     | 5    | 51.8  | [config](configs/vfa/voc/vfa_split2/vfa_r101_c4_8xb4_voc-split2_5shot-fine-tuning.py)  |          |
-| 2     | 10   | 51.8  | [config](configs/vfa/voc/vfa_split2/vfa_r101_c4_8xb4_voc-split2_10shot-fine-tuning.py) |          |
-| 3     | 1    | 49.0  | [config](configs/vfa/voc/vfa_split3/vfa_r101_c4_8xb4_voc-split3_1shot-fine-tuning.py)  |          |
-| 3     | 2    | 54.9  | [config](configs/vfa/voc/vfa_split3/vfa_r101_c4_8xb4_voc-split3_2shot-fine-tuning.py)  |          |
-| 3     | 3    | 56.6  | [config](configs/vfa/voc/vfa_split3/vfa_r101_c4_8xb4_voc-split3_3shot-fine-tuning.py)  |          |
-| 3     | 5    | 59.0  | [config](configs/vfa/voc/vfa_split3/vfa_r101_c4_8xb4_voc-split3_5shot-fine-tuning.py)  |          |
-| 3     | 10   | 58.5  | [config](configs/vfa/voc/vfa_split3/vfa_r101_c4_8xb4_voc-split3_10shot-fine-tuning.py) |          |
+| 1     | 1    | 57.5  | [config](configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split1_1shot-fine-tuning.py)  | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split1_1shot-fine-tuning_iter_400.pth)         |
+| 1     | 2    | 65.0  | [config](configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split1_2shot-fine-tuning.py)  | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split1_2shot-fine-tuning_iter_800.pth)         |
+| 1     | 3    | 64.3  | [config](configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split1_3shot-fine-tuning.py)  | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split1_3shot-fine-tuning_iter_1200.pth)         |
+| 1     | 5    | 67.1  | [config](configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split1_5shot-fine-tuning.py)  | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split1_5shot-fine-tuning_iter_1600.pth)         |
+| 1     | 10   | 67.4  | [config](configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split1_10shot-fine-tuning.py) | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split1_10shot-fine-tuning_iter_2000.pth)         |
+| 2     | 1    | 40.8  | [config](configs/vfa/voc/vfa_split2/vfa_r101_c4_8xb4_voc-split2_1shot-fine-tuning.py)  | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split2_1shot-fine-tuning_iter_400.pth)         |
+| 2     | 2    | 45.9  | [config](configs/vfa/voc/vfa_split2/vfa_r101_c4_8xb4_voc-split2_2shot-fine-tuning.py)  | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split2_2shot-fine-tuning_iter_800.pth)         |
+| 2     | 3    | 51.1  | [config](configs/vfa/voc/vfa_split2/vfa_r101_c4_8xb4_voc-split2_3shot-fine-tuning.py)  | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split2_3shot-fine-tuning_iter_1200.pth)         |
+| 2     | 5    | 51.8  | [config](configs/vfa/voc/vfa_split2/vfa_r101_c4_8xb4_voc-split2_5shot-fine-tuning.py)  | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split2_5shot-fine-tuning_iter_1600.pth)         |
+| 2     | 10   | 51.8  | [config](configs/vfa/voc/vfa_split2/vfa_r101_c4_8xb4_voc-split2_10shot-fine-tuning.py) | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split2_10shot-fine-tuning_iter_2000.pth)         |
+| 3     | 1    | 49.0  | [config](configs/vfa/voc/vfa_split3/vfa_r101_c4_8xb4_voc-split3_1shot-fine-tuning.py)  | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split3_1shot-fine-tuning_iter_400.pth)         |
+| 3     | 2    | 54.9  | [config](configs/vfa/voc/vfa_split3/vfa_r101_c4_8xb4_voc-split3_2shot-fine-tuning.py)  | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split3_2shot-fine-tuning_iter_800.pth)         |
+| 3     | 3    | 56.6  | [config](configs/vfa/voc/vfa_split3/vfa_r101_c4_8xb4_voc-split3_3shot-fine-tuning.py)  | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split3_3shot-fine-tuning_iter_1200.pth)         |
+| 3     | 5    | 59.0  | [config](configs/vfa/voc/vfa_split3/vfa_r101_c4_8xb4_voc-split3_5shot-fine-tuning.py)  | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split3_5shot-fine-tuning_iter_1600.pth)         |
+| 3     | 10   | 58.5  | [config](configs/vfa/voc/vfa_split3/vfa_r101_c4_8xb4_voc-split3_10shot-fine-tuning.py) | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_voc-split3_10shot-fine-tuning_iter_2000.pth)         |
 
 
-### Results on COCO dataset
+#### Results on COCO dataset
 
 * **Base Training**
 
 | Base mAP | config                                                            | ckpt     |
 |----------|-------------------------------------------------------------------|----------|
-| 36.0     | [config](configs/vfa/coco/vfa_r101_c4_8xb4_coco_base-training.py) | [ckpt]() |
+| 36.0     | [config](configs/vfa/coco/vfa_r101_c4_8xb4_coco_base-training.py) | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_coco_base-training_iter_110000.pth) |
 
 * **Few Shot Finetuning**
 
 | Shot | nAP  | config                                                                 | ckpt     |
 |------|------|------------------------------------------------------------------------|----------|
-| 10   | 16.8 | [config](configs/vfa/coco/vfa_r101_c4_8xb4_coco_10shot-fine-tuning.py) | [ckpt]() |
-| 30   | 19.5 | [config](configs/vfa/coco/vfa_r101_c4_8xb4_coco_30shot-fine-tuning.py) | [ckpt]() |
+| 10   | 16.8 | [config](configs/vfa/coco/vfa_r101_c4_8xb4_coco_10shot-fine-tuning.py) | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_coco_10shot-fine-tuning_iter_10000.pth) |
+| 30   | 19.5 | [config](configs/vfa/coco/vfa_r101_c4_8xb4_coco_30shot-fine-tuning.py) | [ckpt](https://github.com/csuhan/VFA/releases/download/v1.0.0/vfa_r101_c4_8xb4_coco_30shot-fine-tuning_iter_20000.pth) |
 
 
 ### Train and Test
@@ -155,7 +155,7 @@ If you find our work useful for your research, please consider citing:
 @InProceedings{han2023vfa,
     title     = {Few-Shot Object Detection via Variational Feature Aggregation},
     author    = {Han, Jiaming and Ren, Yuqiang and Ding, Jian and Yan, Ke and Xia, Gui-Song},
-    booktitle = {Thirty-Seventh AAAI Conference on Artificial Intelligence (AAAI)},
+    booktitle = {Proceedings of the 37th AAAI Conference on Artificial Intelligence (AAAI-23)},
     year      = {2023}
 }
 ```
