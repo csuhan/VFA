@@ -131,7 +131,7 @@ bash dist_train.sh ${CONFIG} ${NUM_GPU}
 For example: train VFA on VOC.
 ```bash
 # Stage I: base training.
-bash tools/dist_train.sh configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split{1,2,3}_base-training.py 8
+bash dist_train.sh configs/vfa/voc/vfa_split1/vfa_r101_c4_8xb4_voc-split{1,2,3}_base-training.py 8
 
 # Stage II: few-shot fine-tuning on all splits and shots.
 voc_config_dir=configs/vfa/voc/
@@ -139,7 +139,7 @@ for split in 1 2 3; do
     for shot in 1 2 3 5 10; do
         config_path=${voc_config_dir}/vfa_split${split}/vfa_r101_c4_8xb4_voc-split${split}_${shot}shot-fine-tuning.py
         echo $config_path
-        bash tools/dist_train.sh $config_path 8
+        bash dist_train.sh $config_path 8
     done
 done
 ```
